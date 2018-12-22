@@ -10,7 +10,7 @@ app.use(express.static("public"));
 app.use(bodyParser.urlencoded({extended: true}));
 
 app.get("/", function(req, res){
-  res.sendFile(__dirname + "http://joshuawebb.me/index.html");
+  res.sendFile(__dirname + "https://jwebb1991.github.io/");
 });
 
 app.post("/", function(req, res){
@@ -45,12 +45,12 @@ app.post("/", function(req, res){
 
   request(options, function(error, response, body){
     if(error) {
-      res.sendFile(__dirname + "http://joshuawebb.me/failure.html");
+      res.sendFile(__dirname + "/failure.html");
     } else {
       if (response.statusCode === 200) {
-        res.sendFile(__dirname + "http://joshuawebb.me/success.html");
+        res.sendFile(__dirname + "/success.html");
       } else {
-      res.sendFile(__dirname + "http://joshuawebb.me/failure.html");      }
+      res.sendFile(__dirname + "/failure.html");      }
     }
   });
 
