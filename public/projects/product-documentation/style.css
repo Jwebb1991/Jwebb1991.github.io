@@ -1,0 +1,59 @@
+html {
+  font-size: 1rem;
+}
+h1 {
+  font-size: 1.5rem;
+  font-weight: 800;
+}
+h2{
+  font-size: 1.25rem;
+  font-weight: 800;
+  text-shadow:
+    1px 1px black,
+    1px 1px black,
+    1px 1px black,
+    1px 1px black;
+}
+h3 {
+  font-size: 1.15rem;
+  font-weight: 800;
+}
+body {
+  font-family: 'Varela Round', sans-serif;
+  background: #d6fffc;
+}
+.nav-link {
+  padding: 0 .5rem;
+}
+
+#navbar {
+  background: skyblue;
+  text-align: center;
+  border-right: 2px solid black;
+  font-size: 1rem;
+  line-height: 1.25rem;
+  height: 100%;
+  position: fixed;
+  max-width: 30%;
+}
+#navbar > a {
+  font-weight: 600;
+}
+#navbar > a:hover {
+  color: white !important;
+  transform: scale(1.05);
+}
+@media (min-width: 700px) {
+  html {
+    font-size: 1.25rem;
+  }
+  .nav-link {
+    font-size: 1rem;
+  }
+  h1 {
+    font-size: 1.75rem;
+  }
+  h2 {
+    font-size: 1.75rem;
+  }
+}

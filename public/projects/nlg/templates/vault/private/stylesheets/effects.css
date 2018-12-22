@@ -1,0 +1,94 @@
+/*     Hover     */
+  .dropdown-item:focus, .dropdown-item:hover, .link:hover {
+    background-color: transparent !important;
+    transform: scale(1.05) !important;
+  }
+  .nav-link:hover, .btn:hover, a:hover {
+    transform: scale(1.02) !important;
+    cursor: pointer;
+  }
+
+  a:hover{
+    text-decoration: none !important;
+  }
+  .dropdown-menu{
+    opacity: .9;
+  }
+
+
+/*    ANIMATIONS    */
+.wrapper, nav{
+  -webkit-animation: fadein 4s; /* Safari, Chrome and Opera > 12.1 */
+       -moz-animation: fadein 4s; /* Firefox < 16 */
+        -ms-animation: fadein 4s; /* Internet Explorer */
+         -o-animation: fadein 4s; /* Opera < 12.1 */
+            animation: fadein 4s;
+}
+
+@keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Firefox < 16 */
+@-moz-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Safari, Chrome and Opera > 12.1 */
+@-webkit-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+/* Internet Explorer */
+@-ms-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+/* Opera < 12.1 */
+@-o-keyframes fadein {
+    from { opacity: 0; }
+    to   { opacity: 1; }
+}
+
+
+#headline, .headline{
+  -webkit-animation-name: pulsate;
+  -webkit-animation-duration: 2.5s;
+  -webkit-animation-timing-function: ease-in-out;
+  -webkit-animation-iteration-count: infinite
+}
+@-webkit-keyframes pulsate{
+    0% {
+      opacity: 1.0;
+      transform: scale(1.0);
+      color: blue;
+    }
+    20% {
+      opacity: .80;
+      transform: scale(1.05);
+      color: white;
+    }
+    40% {
+      opacity: .50;
+      color: red;
+    }
+
+    60% {
+      opacity: .50;
+      color: white;
+    }
+
+    75% {
+      opacity: .50;
+      color: blue;
+    }
+    90% {
+       opacity: .80;
+       color: white;
+        }
+    100% { opacity: 1.0}
+      color: blue;
+ }

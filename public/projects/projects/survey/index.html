@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!--  Meta  -->
+  <meta charset="UTF-8" />
+
+  <!--  Styles  -->
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.4.2/css/all.css" integrity="sha384-/rXc/GQVaYpyDdyxK+ecHPVYJSN9bmVFBvjA/9eOB+pb3F2w2N6fc5qB9Ew5yIns" crossorigin="anonymous">
+</head>
+
+<body id="main">
+  <header id="header">
+    <h1 id="title">Satisfaction Survey <i class="fas fa-utensils"></i></h1>
+    <p id="description"><b>Let us know how to serve you better!</b> </p>
+  </header>
+
+  <form id="survey-form" action="input">
+    <div id="info-area" class="container">
+      <label id="name-label" for="name"><b>Name: </b>
+        <input id="name" type="text" name="name" placeholder=" Enter name" value="" required
+        style="margin: .5rem 0;">
+      </label>
+        <br>
+      <label id="email-label" for="email"><b>Email:</b>
+        <input id="email" type="email" name="email" placeholder=" Enter email" value="" required
+        style="margin: .5rem 0;">
+      </label>
+        <br>
+      <label id="number-label" for="age"><b>Age: </b>
+        <input id="number" type="number" name="age" placeholder=" age" value="" min="1" max="110" required
+        style="margin: .5rem 0;">
+      </label>
+    </div>
+
+     <div id="service-level" class="container">
+       <label for="level-of-service"> <b>Level of Service</b> <br>
+         <select name="dropdown" id="dropdown">
+           <option value="Excellent">Excellent</option>
+           <option value="Satisfied">Satisfied</option>
+           <option value="OK">OK</option>
+           <option value="Below Average">Below Average</option>
+           <option value="Terrible">Terrible</option>
+         </select>
+       </label>
+     </div>
+
+    <div class="container">
+      <label for="number-of-times-visited"> <b>Number of times you have visited our restaraunt?</b> <br>
+        <input type="radio" name="attribute" value="1" style="margin-top: 1.25rem;">First time <br>
+        <input type="radio" name="attribute" value="2-4">2-4<br>
+        <input type="radio" name="attribute" value="5-7">5-7<br>
+        <input type="radio" name="attribute" value="8+">8+<br>
+      </label>
+    </div>
+
+    <div class="container">
+      <label for="ways-to-improve"> <b>Let us know what could use some work! (check all that apply)</b> <br>
+        <input type="checkbox" name="attribute" value="staff" style="margin-top: 1.25rem;">Friendlier Staff <br>
+        <input type="checkbox" name="attribute" value="wait">Too long of a wait<br>
+        <input type="checkbox" name="attribute" value="food">Food wasn't what I expected<br>
+        <input type="checkbox" name="attribute" value="menu">Menu was too limited<br>
+        <input type="checkbox" name="attribute" value="waiter">Waiter/Waitress could use some help<br>
+        <input type="checkbox" name="attribute" value="price">Too pricey<br>
+      </label>
+    </div>
+
+    <div class="container">
+      <span><b>Leave a comment below</b></span> <br>
+      <textarea id="text-area" type="text" name="attribute" value=""></textarea> <br>
+      <button id="submit" type="submit" name="submit">Submit</button>
+    </div>
+  </form>
+
+
+
+  <!-- Scripts -->
+  <script src="scripts/index.js"></script>
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+</html>

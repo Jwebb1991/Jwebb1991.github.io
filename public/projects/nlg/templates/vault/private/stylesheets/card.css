@@ -1,0 +1,58 @@
+/*      Cards      */
+.card-body:hover{
+  background: rgb(18, 17, 19);
+  cursor: pointer;
+  border-top, border-bottom: 1px solid black;
+}
+ .card-body{
+   color: white;
+   background: black;
+}
+
+ .card1, .card2{
+   background-size: cover;
+   margin-bottom: 1rem;
+   border-radius: .25rem;
+   opacity: .7;
+}
+ .card-title{
+   font-size: 1.8rem;
+   text-shadow:
+ }
+ .card-text{
+   text-shadow:
+   1px 1px white,
+   -1px -1px white,
+   -1px 1px white,
+   1px -1px white;
+ }
+
+ .title, .text-dark, h4{
+   text-shadow:
+     1px 1px white,
+     -1px -1px white,
+     1px -1px white,
+     -1px 1px white !important;
+}
+
+
+img, .card-body, .carousel-inner{
+  border-radius: .5rem !important;
+}
+.card-img-top{
+  height: 100px;
+}
+#scrolling-container > .card {
+  margin-bottom: 1.5rem !important;
+}
+
+#scrolling-container{
+  border-bottom: 2px solid blue !important;
+}
+#story-container{
+  border-radius: 1rem;
+}
+.pre-scrollable {
+  max-height: 400px !important;
+  height: 100% !important;
+}

@@ -1,0 +1,9 @@
+ To make any updates do the following:
+1. Open Hyper Terminal
+2.Enter in sequence:
+  navigate to app directory
+  git add .
+  git commit -m "message"
+  git push heroku master
+
+3. Success!

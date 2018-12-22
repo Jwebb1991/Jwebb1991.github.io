@@ -1,0 +1,28 @@
+
+/*     NAVIGATION    */
+    #logo{
+      height: 3.5rem;
+    }
+    .navbar{
+      background: black!important;
+    }
+    i, .nav-item{
+      text-shadow:
+      1px 1px white,
+      1px -1px white,
+      -1px -1px white,
+      -1px 1px white;
+    }
+    .navbar-brand{
+      font-weight: bolder;
+      color: blue;
+    }
+    .navbar-toggler{
+      background: blue !important;
+    }
+    .navbar-collapse{
+      border-radius: 1rem;
+    }
+    .nav-link{
+      color: white !important;
+    }

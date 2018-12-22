@@ -1,0 +1,103 @@
+
+body {
+  max-width: 700px;
+  font-family: 'Ubuntu', sans-serif;
+  font-size: 1.5rem;
+  justify-content: center;
+  margin: auto;
+  padding: 0;
+}
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  .content-container {
+    border: 3px solid #ccc;
+    border-radius: 10px;
+    padding: 20px;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 15px 15px #ccc;
+  }
+
+  #quote-container {
+    height: 150px;
+  }
+
+  img {
+    max-height: 300px;
+    max-width: none;
+    border-radius: 8px 8px 0 0;
+  }
+
+  p {
+    color: black;
+    font-size: 1.25rem;
+  }
+
+  .social-link {
+    color: black;
+    text-decoration: none;
+    font-size: 1.25rem;
+  }
+
+  .social-link:hover {
+    color: green;
+    font-size: 1.27rem;
+    transition: 0.5s ease;
+    text-decoration: none;
+  }
+
+  button {
+    font-size: 1.5rem !important;
+    width: 25%;
+    height: 50px;
+    -moz-box-shadow: 3px 3px 5px 6px #ccc;
+    -webkit-box-shadow: 3px 3px 5px 6px #ccc;
+    box-shadow: 3px 3px 5px 6px #ccc;
+  }
+
+  button {
+    width: 7em;
+    height: 100%;
+  }
+  button:hover > span {
+    display:none;
+    }
+  button:hover:before {
+    content:"Be Inspired!";
+    }
+  button:hover {
+    transform: scale(1.05);
+    transition: 0.2s ease;
+  }
+
+  @media (min-width: 576px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+
+  @media (min-width: 768px) {
+  html {
+    font-size: 20px;
+  }
+}
+
+
+  @media (min-width: 992px) {
+  html {
+    font-size: 20px;
+  }
+  h1 {
+    font-size: 2.75rem;
+  }
+
+
+  @media (min-width: 1200px) {
+  html {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,339 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="./style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Maven+Pro" rel="stylesheet">
+
+    <title>Brighter Homes</title>
+  </head>
+
+  <body class="text-center">
+
+    <!-- Mobile & Tablet navigation bar -->
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-primary fixed-top d-lg-none">
+      <a class="navbar-brand text-white" href="#">BrighterHomes <i class="fas fa-home"></i></a>
+      <button class="navbar-toggler bg-white" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse bg-white p-2 mt-1" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Browse by City
+            </a>
+            <div class="dropdown-menu row border-0 text-center" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Kissimmee</a>
+              <a class="dropdown-item" href="#">Altamonte Springs</a>
+              <a class="dropdown-item" href="#">Orlando</a>
+              <a class="dropdown-item" href="#">Celebration</a>
+              <a class="dropdown-item" href="#">Apopka</a>
+              <a class="dropdown-item" href="#">Sanford</a>
+            </div>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Listings
+            </a>
+            <div class="dropdown-menu border-0 text-center" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" href="#">Show All</a>
+              <a class="dropdown-item" href="#">Price Reductions</a>
+              <a class="dropdown-item" href="#">Foreclosures</a>
+            </div>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Get Pre-Approved</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Have Questions?</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <!-- Large / Desktop Navigation Bar -->
+
+    <nav class="navbar navbar-lg navbar-expand-lg bg-primary text-white d-none d-lg-flex justify-content-center align-items-center mx-auto">
+      <a class="navbar-brand ml-0 text-white" href="#">BrighterHomes <i class="fas fa-home"></i></a>
+      <div class="">
+        <a class="text-white" href="#">Buy</a>
+        <a class="text-white" href="#">Sell</a>
+        <a class="text-white" href="#">Rent</a>
+        <a class="text-white" href="#">Articles</a>
+      </div>
+      <a href="#" class="navbar-text-lg text-white ml-auto">
+        Get Pre-Approved! <i class="fas fa-edit"></i>
+      </a>
+    </nav>
+
+
+    <div class="jumbotron jumbotron-fluid p-0">
+      <div id="jumbotron-bg" class="container">
+        <div class="container pt-5 px-0">
+          <div class="row justify-content-center d-flex align-items-center supporting-text bg-white">
+            <div class="col col-12 jumbotron-text ">
+              <h3 class="text-primary">"Finding a New Home has never been easier"</h3>
+            </div>
+          </div>
+        </div>
+
+        <div id="search-tool" class="container">
+          <div class="row justify-content-around button-container">
+           <button id="button-left" type="button" name="location" class="active-link button">City</button>
+           <button id="button-middle" type="button" name="zip-code" class="button">Zip</button>
+           <button id="button-right" type="button" name="price" class="button">Price</button>
+          </div>
+          <fieldset id="city-menu" class="my-3">
+            <p>
+             <select id = "city" class="p-2 button-container">
+                 <option value = "1">Select City</option>
+                 <option value = "2">Sanford</option>
+                 <option value = "3">Orlando</option>
+                 <option value = "4">Altamonte Springs</option
+                 <option value = "5">Kissimmee</option>
+                 <option value = "6">Celebration</option>
+                 <option value = "7">Casselberry</option>
+             </select>
+             <button id="city-submit" class="btn btn-primary mb-2 button-container ml-1 px-3">Go</button>
+            </p>
+          </fieldset>
+
+          <fieldset id="zip-menu" class="my-3 d-none">
+            <p>
+             <select id = "zip-code" class="py-2 px-4 button-container">
+               <option value = "1">32118</option>
+               <option value = "2">32119</option>
+               <option value = "3">32120</option>
+               <option value = "4">32121</option>
+               <option value = "5">32122</option>
+               <option value = "6">32123</option>
+             </select>
+             <button id="zip-submit" class="btn btn-primary mb-2 button-container ml-1 px-3">Go</button>
+            </p>
+          </fieldset>
+
+          <fieldset id="price-menu" class="my-3 d-none">
+            <p>
+             <select id = "price" class="p-2 button-container">
+               <option value = "1">Under $100k</option>
+               <option value = "2">$100k-$200k</option>
+               <option value = "3">$200k-$300k</option>
+               <option value = "4">$300k-$400k</option>
+               <option value = "5">$400k+</option>
+             </select>
+             <button id="price-submit" class="btn btn-primary mb-2 button-container ml-1 px-3">Go</button>
+            </p>
+          </fieldset>
+        </div>
+      </div>
+    </div>
+
+    <div id="about-me" class="row d-flex justify-items-center py-3 px-0 mx-0 justify-content-center my-3">
+      <div class="col col-12 px-0">
+        <img id="profile-image" src="./images/profile.jpeg" alt=""><br>
+        <p class="mt-4"><b>Steven Chase<br>
+        Realtor / Advisor / Owner</b></p>
+      </div>
+      <div class="col col-12 col-sm-10 col-lg-8 py-0 px-2 mt-0">
+        <span class="text-primary">
+          "Having proudly served the Orlando area since 1900, let me help find your forever home!"
+        </span>
+      </div>
+    </div>
+
+
+    <h2 class="mt-5 text-dark">Active Listings <i class="fas fa-sign"></i></h2>
+    <ul class="d-flex justify-content-center nav-list mx-auto mb-0 px-0">
+      <li><a href="#">Newer</a></li>
+      <li><a href="#">Older</a></li>
+      <li><a href="#">Price <i class="fas fa-arrow-down"></i></a></li>
+      <li><a href="#">Price <i class="fas fa-arrow-up"></i></a></li>
+    </ul>
+    <div class="container scrolling-content mt-2 p-3">
+      <div class="row justify-content-center">
+        <div class="col col-12 scrolling-images">
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house3.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house3.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <h2 class="mt-5 text-dark">Foreclosures <i class="fas fa-dollar-sign"></i></h2>
+    <ul class="d-flex justify-content-center nav-list mx-auto mb-0 px-0">
+      <li><a href="#">Newer</a></li>
+      <li><a href="#">Older</a></li>
+      <li><a href="#">Price <i class="fas fa-arrow-down"></i></a></li>
+      <li><a href="#">Price <i class="fas fa-arrow-up"></i></a></li>
+    </ul>
+    <div class="container scrolling-content mt-2 p-3">
+      <div class="row justify-content-center">
+        <div class="col col-12 scrolling-images">
+          <a href="#">
+            <img src="./images/house3.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house3.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house3.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house2.jpeg" alt="">
+          </a>
+          <a href="#">
+            <img src="./images/house1.jpeg" alt="">
+          </a>
+        </div>
+      </div>
+    </div>
+
+
+    <div id="large-image1" class="container supporting-image d-flex align-items-center mt-5">
+      <div class="row supporting-text mx-auto">
+        <div class="col col-12">
+          <h3>Your Dream Home</h3>
+        </div>
+        <div class="col-12">
+          <p>Could be closer to reality than you think!</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="large-image2" class="container supporting-image d-flex align-items-center">
+      <div class="row supporting-text mx-auto">
+        <div class="col col-12">
+          <h3>Happily Ever After</h3>
+        </div>
+        <div class="col-12">
+          <p>Find a home you can proud to call yours!</p>
+        </div>
+      </div>
+    </div>
+
+    <div id="large-image3" class="container supporting-image d-flex align-items-center">
+      <div class="row supporting-text mx-auto">
+        <div class="col col-12">
+          <h3>Dedicated Team</h3>
+        </div>
+        <div class="col-12">
+          <p>Here to support you 24/7 rain or shine!</p>
+        </div>
+      </div>
+    </div>
+
+    <footer class="p-3 container mt-2 d-lg-none">
+      <div class="row d-flex justify-content-around">
+        <a href="#">Browse</a>
+        <a href="#">Apply</a>
+        <i class="fas fa-home fa-2x text-primary"></i>
+        <a href="#">Contact</a>
+        <a href="#">Support</a>
+      </div>
+    </footer>
+
+    <footer class="p-3 container mt-2 d-none d-lg-block">
+      <div class="row justify-content-center mx-auto">
+        <div class="col col-3">
+          <u class="text-primary"><b>Browse By City</b></u>
+          <a href="#">Kissimmee</a>
+          <a href="#">Altamonte Springs</a>
+          <a href="#">Sanford</a>
+          <a href="#">Orlando</a>
+          <a href="#">Celebration</a>
+          <a href="#">Casselberry</a>
+        </div>
+        <div class="col col-3">
+          <u class="text-primary"><b>By Price</b></u>
+          <a href="#">Under $100,000 </a>
+          <a href="#">$100,000 - $200,000</a>
+          <a href="#">$200,000 - $300,000</a>
+          <a href="#">$300,000 - $400,000</a>
+          <a href="#">$400,000 +</a>
+        </div>
+        <div class="col col-2">
+          <u class="text-primary"><b>By Zip Code</b></u>
+          <a href="#">32118</a>
+          <a href="#">32119</a>
+          <a href="#">32120</a>
+          <a href="#">32121</a>
+          <a href="#">32122</a>
+          <a href="#">32123</a>
+        </div>
+        <div class="col col-4">
+          <u class="text-primary"><b>Contact Us</b></u><br>
+          <span>Phone: (386)405-0000</span><br>
+          <span>Email: supportteam@brighterhomes.com</span><br>
+          <span>Location: 1234 South Main St <br> Orlando, FL 12345</span>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.js"
+      integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60="
+      crossorigin="anonymous">
+    </script>
+    <script src="script.js" charset="utf-8"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
