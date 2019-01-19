@@ -313,6 +313,9 @@ tr:nth-child(even) {
 }
 
 @media (min-width: 768px) {
+  #early-bird {
+    margin-top: -120px;
+  }
   .card-body {
     height: 145px;
   }
@@ -334,6 +337,12 @@ tr:nth-child(even) {
 }
 
 @media (min-width: 992px) {
+  #early-bird {
+    margin-top: -175px;
+  }
+  .btn-body {
+    margin-top: -40px;
+  }
   .card-body {
     height: 120px;
   }
@@ -347,7 +356,7 @@ tr:nth-child(even) {
     font-size: 2.5rem;
   }
   .linear-bg {
-    background-image: -webkit-linear-gradient(80deg, #ffc107 45%, black 30%);
+    background-image: -webkit-linear-gradient(80deg, #ffc107 49%, black 30%);
     box-shadow: 0px 0px 15px 10px #ffc107;
     height: 600px;
   }
