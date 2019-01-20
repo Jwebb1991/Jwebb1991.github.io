@@ -385,6 +385,10 @@ tr:nth-child(even) {
    animation: 2.5s linear slide-in-up;
  }
 
+ .animate-down{
+   animation: 2.5s linear slide-in-down;
+ }
+
  @keyframes slide-in-right {
    0% {
      opacity: 0;
@@ -430,6 +434,23 @@ tr:nth-child(even) {
    }
    90% {
      transform: translateY(5px);
+   }
+   100% {
+     transform: translateY(0);
+   }
+ }
+
+ @keyframes slide-in-down {
+   0% {
+     opacity: 0;
+     transform: translateY(-200px);
+   }
+   80% {
+     opacity: 1;
+     transform: translateY(10px);
+   }
+   90% {
+     transform: translateY(-5px);
    }
    100% {
      transform: translateY(0);
