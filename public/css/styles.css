@@ -5,7 +5,8 @@
 body {
   background: black;
   font-family: 'Roboto', sans-serif;
-  margin: 0;
+  margin: 0 auto;
+  max-width: 1420px;
   position: relative;
   text-align: center;
 }
